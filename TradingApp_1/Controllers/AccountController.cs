@@ -89,7 +89,7 @@ namespace TradingApp_1.Controllers
                 string[] allowedExtsnions = new string[] { ".png", ".jpeg" };
 
                 if (!allowedExtsnions.Contains(extension))
-                    throw new Exception("Sorry! This file is not allowed, make sure that file having extension as either.xls or.xlsx is uploaded.");
+                    throw new Exception("Please upload only Png or Jpeg files");
 
                 string saveToPath = Path.Combine(dirPath, dataFileName);
             TempData["filepath"] = saveToPath;
