@@ -1,0 +1,11 @@
+﻿
+
+<h3> Upload Photo</h3>
+
+<div class="text-center">
+    <form asp-controller="Account" asp-action="UploadPhoto"
+          method="post" enctype="multipart/form-data">
+        <input type="file" name="file" />
+        <input type="submit" value="Upload" />
+    </form>
+</div>
